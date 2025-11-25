@@ -1,0 +1,12 @@
+Var x : Integer;
+x := 12345678901;
+
+Var ch : Char;
+ch := 'ab';
+ch := '';
+
+@#$%
+
+Var verylongidentifiername123 : Integer;
+
+(* This comment never closes
