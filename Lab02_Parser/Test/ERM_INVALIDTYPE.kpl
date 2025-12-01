@@ -1,0 +1,5 @@
+Program TestInvalidType;
+Type t = +;
+Begin
+End.
+

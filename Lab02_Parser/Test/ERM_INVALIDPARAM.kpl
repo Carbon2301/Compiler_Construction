@@ -1,0 +1,7 @@
+Program InvalidParam;
+Procedure p(+ : Integer);
+Begin
+End;
+Begin
+End.
+

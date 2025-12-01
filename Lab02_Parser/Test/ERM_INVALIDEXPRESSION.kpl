@@ -1,0 +1,6 @@
+Program TestExpression;
+Var i : Integer;
+Begin
+  i := 5 =;
+End.
+

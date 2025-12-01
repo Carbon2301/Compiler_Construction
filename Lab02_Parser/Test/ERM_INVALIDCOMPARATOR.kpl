@@ -1,0 +1,7 @@
+Program TestComparator;
+Var i : Integer;
+Begin
+  If i + 5 Then
+    i := 1;
+End.
+

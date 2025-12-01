@@ -1,0 +1,8 @@
+Program TestArguments;
+Procedure p(i : Integer);
+Begin
+End;
+Begin
+  Call p(+);
+End.
+

@@ -1,0 +1,6 @@
+Program InvalidFactor;
+Var i : Integer;
+Begin
+  i := =;
+End.
+
