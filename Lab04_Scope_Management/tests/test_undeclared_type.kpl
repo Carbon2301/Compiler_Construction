@@ -1,0 +1,5 @@
+PROGRAM TEST;
+VAR X : T;  // ERR_UNDECLARED_TYPE: T chưa được khai báo
+BEGIN
+END.
+

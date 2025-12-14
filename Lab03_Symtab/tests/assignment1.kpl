@@ -1,0 +1,38 @@
+PROGRAM ASSIGNMENT1;
+TYPE ROW = ARRAY(. 100 .) OF INTEGER;
+VAR N : INTEGER;
+    I : INTEGER;
+    J : INTEGER;
+    RESULT : INTEGER;
+    MATRIX : ARRAY(. 100 .) OF ROW;
+
+BEGIN
+  N := READI;
+    FOR I := 1 TO N DO
+    BEGIN
+      FOR J := 1 TO N DO
+        BEGIN
+          MATRIX(.I.)(.J.) := READI;
+        END
+    END;
+  
+  RESULT := 1;
+  I := 2;
+  WHILE I <= N DO
+    BEGIN
+      J := 1;
+      WHILE J < I DO
+        BEGIN
+          IF MATRIX(.I.)(.J.) != 0 THEN
+            BEGIN
+              RESULT := 0;
+            END;
+          J := J + 1;
+        END;
+      I := I + 1;
+    END;
+  
+  CALL WRITEI(RESULT);
+  CALL WRITELN;
+END.
+
