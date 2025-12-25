@@ -1,0 +1,12 @@
+PROGRAM TEST10;
+(* Lỗi: Truyền tham biến bằng một hằng biểu diễn bởi định danh *)
+CONST C1 = 10;
+
+PROCEDURE P(VAR V : INTEGER);  (* Tham biến INTEGER *)
+BEGIN
+END;
+
+BEGIN
+  CALL P(C1);  (* Lỗi: Truyền hằng cho tham biến *)
+END.
+

@@ -1,0 +1,8 @@
+PROGRAM TEST2;
+(* Lỗi: Dùng sai số chiều của mảng so với khai báo *)
+VAR A : ARRAY(. 10 .) OF INTEGER;
+BEGIN
+  A(.1.) := 10;        
+  A(.1.)(.2.) := 20;   (* Lỗi: A chỉ có 1 chiều, không thể dùng 2 chỉ số *)
+END.
+

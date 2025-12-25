@@ -1,0 +1,8 @@
+PROGRAM TEST3;
+(* Lỗi: Một biểu thức bắt đầu bằng + nhưng phần sau đó lại có kiểu ký tự *)
+VAR C : CHAR;
+    I : INTEGER;
+BEGIN
+  I := +'a';     (* Lỗi: + với char *)
+END.
+

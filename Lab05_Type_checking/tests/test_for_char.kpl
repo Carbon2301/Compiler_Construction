@@ -1,0 +1,12 @@
+PROGRAM TEST;
+(* Test: Kiểm tra khả năng điều khiển lệnh FOR bằng biến ký tự *)
+VAR C : CHAR;
+    I : INTEGER;
+BEGIN
+  (* Lỗi: FOR với biến char *)
+  FOR C := 1 TO 10 DO
+    BEGIN
+      I := 1;
+    END;
+END.
+

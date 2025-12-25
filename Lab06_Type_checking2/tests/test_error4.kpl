@@ -1,0 +1,8 @@
+PROGRAM TEST4;
+(* Lỗi: Không tương ứng kiểu trong lệnh gán và lệnh while *)
+VAR I : INTEGER;
+BEGIN
+  (* Lỗi: Gán char cho integer *)
+  I := 'a';
+END.
+

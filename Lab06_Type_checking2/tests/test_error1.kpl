@@ -1,0 +1,7 @@
+PROGRAM TEST1;
+(* Lỗi: Không tương ứng kiểu khi khai báo hằng *)
+CONST C1 = 'a';
+      C2 = +'a';  (* Lỗi: + với char *)
+BEGIN
+END.
+

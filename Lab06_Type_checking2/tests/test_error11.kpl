@@ -1,0 +1,13 @@
+PROGRAM TEST11;
+(* Lỗi: Truyền tham biến bằng một biểu thức *)
+VAR I : INTEGER;
+    J : INTEGER;
+
+PROCEDURE P(VAR V : INTEGER);  (* Tham biến INTEGER *)
+BEGIN
+END;
+
+BEGIN
+  CALL P(I + J);  (* Lỗi: Truyền biểu thức (I + J) cho tham biến *)
+END.
+

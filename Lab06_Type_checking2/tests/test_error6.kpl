@@ -1,0 +1,12 @@
+PROGRAM TEST6;
+(* Lỗi: Danh sách tham số thực sự rỗng, danh sách tham số hình thức có ít nhất 1 phần tử *)
+VAR I : INTEGER;
+
+PROCEDURE P(V : INTEGER);  (* Có 1 tham số *)
+BEGIN
+END;
+
+BEGIN
+  CALL P;  (* Lỗi: Không truyền đối số cho procedure có 1 tham số *)
+END.
+

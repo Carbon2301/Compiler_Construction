@@ -1,0 +1,13 @@
+PROGRAM TEST7;
+(* Lỗi: Danh sách tham số hình thức chứa nhiều phần tử hơn danh sách tham số thực sự *)
+VAR I : INTEGER;
+    J : INTEGER;
+
+PROCEDURE P(V1 : INTEGER; V2 : INTEGER);  (* Có 2 tham số *)
+BEGIN
+END;
+
+BEGIN
+  CALL P(I);  (* Lỗi: Chỉ truyền 1 đối số trong khi cần 2 *)
+END.
+

@@ -1,0 +1,13 @@
+PROGRAM TEST9;
+(* Lỗi: Không tương ứng kiểu giữa tham số hình thức và tham số thực sự *)
+VAR I : INTEGER;
+    C : CHAR;
+
+PROCEDURE P(V : INTEGER);  (* Tham số kiểu INTEGER *)
+BEGIN
+END;
+
+BEGIN
+  CALL P(C);  (* Lỗi: Truyền CHAR cho tham số INTEGER *)
+END.
+
